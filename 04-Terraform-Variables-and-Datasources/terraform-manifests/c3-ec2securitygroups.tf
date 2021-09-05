@@ -2,6 +2,7 @@
 resource "aws_security_group" "vpc-ssh" {
   name        = "vpc-ssh"
   description = "Dev VPC SSH"
+#  vpc_id = aws_vpc.main.id
   ingress {
     description = "Allow Port 22"
     from_port   = 22
